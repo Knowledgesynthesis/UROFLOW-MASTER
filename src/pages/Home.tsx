@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ModuleCard from '../components/ModuleCard';
 import {
   Droplet,
@@ -115,9 +116,9 @@ const Home: React.FC = () => {
           <p className="text-gray-600 dark:text-gray-300 mb-4">
             Test your knowledge with interactive questions and case scenarios.
           </p>
-          <a href="/assessment" className="btn-primary inline-block">
+          <Link to="/assessment" className="btn-primary inline-block">
             Start Assessment
-          </a>
+          </Link>
         </div>
 
         <div className="card hover:shadow-lg transition-shadow">
@@ -127,9 +128,9 @@ const Home: React.FC = () => {
           <p className="text-gray-600 dark:text-gray-300 mb-4">
             Quick reference for urologic and urogynecologic terminology.
           </p>
-          <a href="/glossary" className="btn-primary inline-block">
+          <Link to="/glossary" className="btn-primary inline-block">
             Browse Glossary
-          </a>
+          </Link>
         </div>
       </div>
     </div>
